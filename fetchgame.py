@@ -19,7 +19,7 @@ def download_image(image, folder, image_type):
         mime = image.mime
         # Handle Microsoft icon mime type
         if mime == "image/vnd.microsoft.icon":
-            ext = "ico"
+            ext = "png"
         else:
             ext = mime.split('/')[1]
         filename = os.path.join(folder, f"{image_type}.{ext}")
